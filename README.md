@@ -237,7 +237,7 @@ A full-featured URL shortening service with user authentication, link management
 **Tech Stack:**
 - Express.js backend
 - Drizzle ORM with migrations
-- PostgreSQL/MySQL database
+- MySQL database
 - JWT authentication
 - Nodemailer for emails
 - EJS templating
@@ -346,68 +346,9 @@ This repository covers:
 4. **Authentication** - OAuth, JWT, email verification
 5. **Real-World Application** - URL Shortener with full CRUD
 
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📝 Project Structure Notes
 
 - **node_modules/** - NOT included (see .gitignore)
 - **.env files** - NOT included (see .gitignore)
 - All environment-specific files are excluded from version control
 - Each subdirectory can have its own `package.json` and dependencies
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Module not found:**
-```bash
-cd [project-directory]
-rm -rf node_modules package-lock.json
-npm install
-```
-
-**Port already in use:**
-```bash
-# Change the PORT in .env file
-# Or kill the process using the port
-```
-
-**Database connection error:**
-- Verify database credentials in .env
-- Ensure database server is running
-- Check network connectivity
-
-**Email not sending:**
-- Verify email credentials
-- Enable "Less secure app access" for Gmail
-- Check SMTP settings
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 👤 Author
-
-**Tirthraj Hirpara**
-- Email: hirpara.tirth@gmail.com
-- GitHub: [@TirthHirpara576](https://github.com/TirthHirpara576)
-
-## 📞 Support
-
-For issues, questions, or suggestions, please:
-1. Check existing issues on GitHub
-2. Create a new issue with detailed information
-3. Include error messages and steps to reproduce
-
----
-
-**Happy Coding!** 🎉
-
-*Last Updated: June 2, 2026*
