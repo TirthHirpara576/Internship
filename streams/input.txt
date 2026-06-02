@@ -1,0 +1,3 @@
+I want to paste this content from "input.txt" to "output.txt" using Stream & Buffer concept.
+Streams allow us to read & write data efficiently.
+Let's process this file in chunks of 16 Bytes!

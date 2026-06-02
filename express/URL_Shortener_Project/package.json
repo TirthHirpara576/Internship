@@ -1,0 +1,51 @@
+{
+  "name": "url_shortener_project",
+  "version": "1.0.0",
+  "description": "📌 Node URL Shortener :-\r A simple URL Shortener Web Application built using Node.js (without Express), HTML, CSS, and JavaScript.\r This project demonstrates how to:\r  - Serve static files using Node.js HTTP module\r  - Handle GET & POST requests manually\r  - Store data in a JSON file\r  - Create custom shortcodes\r  - Redirect short URLs to original URLs\r  - Fetch and display stored links in frontend",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --env-file=.env --watch app2.js ",
+    "start": "node --env-file=.env app2.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "node --env-file=.env drizzle/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TirthHirpara576/Node-URL-Shortener.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/TirthHirpara576/Node-URL-Shortener/issues"
+  },
+  "homepage": "https://github.com/TirthHirpara576/Node-URL-Shortener#readme",
+  "dependencies": {
+    "arctic": "^3.7.0",
+    "argon2": "^0.44.0",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.3.1",
+    "drizzle-orm": "^0.45.1",
+    "drizzle-seed": "^0.3.1",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "jsonwebtoken": "^9.0.3",
+    "mjml": "^4.18.0",
+    "multer": "^2.1.1",
+    "mysql2": "^3.18.2",
+    "nodemailer": "^8.0.2",
+    "request-ip": "^3.3.0",
+    "resend": "^6.9.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.9"
+  }
+}

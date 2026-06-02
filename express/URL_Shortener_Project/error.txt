@@ -1,0 +1,7 @@
+Error: Failed query: insert into `short_link` (`id`, `url`, `short_code`, `user_id`, `created_at`, `updated_at`) values (default, ?, ?, default, default, default)
+params: https://test.com,test
+    at MySql2PreparedQuery.queryWithCache (file:///C:/Users/LENOVO/Desktop/Node/express/URL_Shortener_Project/node_modules/drizzle-orm/mysql-core/session.js:25:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async MySql2PreparedQuery.execute (file:///C:/Users/LENOVO/Desktop/Node/express/URL_Shortener_Project/node_modules/drizzle-orm/mysql2/session.js:52:19)
+    at async insertShortLink (file:///C:/Users/LENOVO/Desktop/Node/express/URL_Shortener_Project/services/shortener.services.js:20:3)
+    at async postURLShortenet (file:///C:/Users/LENOVO/Desktop/Node/express/URL_Shortener_Project/controllers/postshortener.controller.js:219:9)

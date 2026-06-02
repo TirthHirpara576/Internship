@@ -1,0 +1,24 @@
+// Lec-91 :- Create Access Token , Refresh Token & store data in "sessions" table
+
+// Lec-121 :- Complete Login with Google
+
+export const MILLISECONDS_PER_SECOND = 1000;
+export const SECONDS_PER_MINUTE = 60;
+export const MINUTES_PER_HOUR = 60;
+export const HOURS_PER_DAY = 24;
+export const DAYS_PER_MONTH = 30;
+export const DAYS_PER_WEEK = 7;
+
+export const ACCESS_TOKEN_EXPIRY =
+    15 * SECONDS_PER_MINUTE * MILLISECONDS_PER_SECOND;
+
+export const REFRESH_TOKEN_EXPIRY =
+    DAYS_PER_WEEK *
+    HOURS_PER_DAY *
+    MINUTES_PER_HOUR *
+    SECONDS_PER_MINUTE *
+    MILLISECONDS_PER_SECOND;
+
+// Lec-121
+export const OAUTH_EXCHANGE_EXPIRY =
+    10 * SECONDS_PER_MINUTE * MILLISECONDS_PER_SECOND;

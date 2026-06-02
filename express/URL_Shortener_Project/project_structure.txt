@@ -1,0 +1,109 @@
+URL_Shortener_Project
+|-- config
+|   |-- constants.js
+|   |-- db_client.js
+|   |-- db.js
+|   -- env.js
+|-- controllers
+|   |-- auth.controller.js
+|   -- postshortener.controller.js
+|-- data
+|   -- links.json
+|-- drizzle
+|   |-- migration
+|   |   |-- meta
+|   |   |   |-- _journal.json
+|   |   |   |-- 0000_snapshot.json
+|   |   |   |-- 0001_snapshot.json
+|   |   |   |-- 0002_snapshot.json
+|   |   |   |-- 0003_snapshot.json
+|   |   |   |-- 0004_snapshot.json
+|   |   |   |-- 0005_snapshot.json
+|   |   |   |-- 0006_snapshot.json
+|   |   |   |-- 0007_snapshot.json
+|   |   |   |-- 0008_snapshot.json
+|   |   |   -- 0009_snapshot.json
+|   |   |-- 0000_warm_tana_nile.sql
+|   |   |-- 0001_ambiguous_impossible_man.sql
+|   |   |-- 0002_lovely_raider.sql
+|   |   |-- 0003_stale_stranger.sql
+|   |   |-- 0004_wonderful_sumo.sql
+|   |   |-- 0005_perpetual_vermin.sql
+|   |   |-- 0006_condemned_anita_blake.sql
+|   |   |-- 0007_polite_pestilence.sql
+|   |   |-- 0008_ordinary_beyonder.sql
+|   |   -- 0009_fixed_gertrude_yorkes.sql
+|   |-- schema.js
+|   -- seed.js
+|-- emails
+|   |-- reset-password-email.mjml
+|   -- verify-email.mjml
+|-- lib
+|   |-- oauth
+|   |   |-- github.js
+|   |   -- google.js
+|   |-- get-html-from-mjml-template.js
+|   |-- nodemailer.js
+|   -- send-email.js
+|-- middleware
+|   -- verify.middleware.js
+|-- models
+|   -- shortener.model.js
+|-- mysql
+|   |-- app.js
+|   |-- package-lock.json
+|   -- package.json
+|-- public
+|   |-- images
+|   |   |-- signin-image.jpg
+|   |   -- signup-image.jpg
+|   |-- uploads
+|   |   -- avatar
+|   |       |-- 1775037432167_0.7982358754104815.jpeg
+|   |       |-- 1775038652709_0.44208148968596395.jpeg
+|   |       |-- 1775038667849_0.7499364626399349.jpeg
+|   |       -- 1775038676076_0.10589538039497126.jpeg
+|   -- style.css
+|-- routes
+|   |-- auth.routes.js
+|   -- shortener.routes.js
+|-- schema
+|   -- url_schema.js
+|-- services
+|   |-- auth.services.js
+|   -- shortener.services.js
+|-- validators
+|   |-- auth-validator.js
+|   -- shortener.validator.js
+|-- views
+|   |-- auth
+|   |   |-- change-password.ejs
+|   |   |-- edit-profile.ejs
+|   |   |-- forgot-password.ejs
+|   |   |-- login.ejs
+|   |   |-- profile.ejs
+|   |   |-- register.ejs
+|   |   |-- reset-password.ejs
+|   |   |-- set-password.ejs
+|   |   |-- verify-email.ejs
+|   |   -- wrong-reset-password-token.ejs
+|   |-- partials
+|   |   |-- footer.ejs
+|   |   -- header.ejs
+|   |-- edit-shortLink.ejs
+|   |-- header.ejs
+|   |-- index.ejs
+|   -- report.ejs
+|-- .env
+|-- app2.js
+|-- drizzle.config.js
+|-- error.txt
+|-- hash-test.js
+|-- log2.txt
+|-- out.log
+|-- out.txt
+|-- package-lock.json
+|-- package.json
+|-- README.md
+|-- test-email.js
+-- test-insert.js

@@ -1,0 +1,90 @@
+<!-- 
+    Lec-5 :- How to send files in expressJS (app.js , index.html , style.css) 
+    Lec-6 :- How to serve static files in expressJS (app.js ,("public" folder -> index.html, style.css) )  
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Express App | Modern Web Server</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+
+        <header class="navbar">
+            <div class="brand">Node<span>Express</span></div>
+            <nav>
+                <a href="/">Home</a>
+                <a href="#">Features</a>
+                <a href="#">About</a>
+                <a href="https://expressjs.com/" target="_blank" class="btn-nav">Docs</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Build Fast & Scalable Web Applications</h1>
+                <p>
+                    A modern Express.js setup demonstrating how to serve static files,
+                    handle routes, and structure a production-ready backend application.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://nodejs.org" target="_blank" class="btn primary">Get Started</a>
+                    <a href="https://expressjs.com/" target="_blank" class="btn secondary">Documentation</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <div class="card">
+                    <h3>⚡ Fast Performance</h3>
+                    <p>Lightweight and optimized server built using Node.js core modules.</p>
+                </div>
+                <div class="card">
+                    <h3>🔐 Secure Routing</h3>
+                    <p>Structured request handling with proper HTTP methods and status codes.</p>
+                </div>
+                <div class="card">
+                    <h3>📂 Static File Serving</h3>
+                    <p>Serving HTML & CSS professionally using Express.js middleware.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 Tirth Hirpara | Built with Node.js & Express.js</p>
+        </footer>
+
+    </body>
+</html>
+-->
+
+
+
+
+<!-- Lec-10 :- Form-Submissions in ExpressJS ("public"->index.html & app.js)  -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Home Page</h1> 
+        <!-- By default, form tag sends GET request to the action. It will send as query parameters 
+            (in which URL, you have to submit your data -> "action" attribute)  -->
+        <form action="/contact" method="post">
+            <div> 
+                <label for="name">Name : </label> 
+                <!-- <input type="text" name="name" id="name" />   -->
+                <input type="text" name="user[name]" id="name" />
+            </div>
+            <div>
+                <label for="message">Message : </label>
+                <!-- <input name="message" id="message" placeholder="Write your message here" />  -->
+                <input name="user[message]" id="message" placeholder="Write your message here" />
+            </div>
+            <button>Submit</button>
+         </form>
+    </body>
+</html>
