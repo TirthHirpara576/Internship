@@ -264,24 +264,6 @@ Node.js event-driven programming:
 - Event listeners and handlers
 - Event propagation
 
-## 🔧 Available Scripts
-
-### Root Level
-```bash
-npm install          # Install all dependencies
-npm start           # Start main application
-npm test            # Run tests
-```
-
-### Express/URL_Shortener_Project
-```bash
-npm start           # Start production server
-npm run dev         # Start development server with nodemon
-npm run migrate     # Run database migrations
-npm run seed        # Seed database with initial data
-npm test            # Run tests
-```
-
 ## 🔐 Environment Variables
 
 Create a `.env` file in the appropriate project directory:
@@ -323,20 +305,6 @@ The URL Shortener project uses Drizzle ORM with the following main entities:
 
 Migrations are located in `express/URL_Shortener_Project/drizzle/migration/`
 
-## 🧪 Testing
-
-```bash
-# Run tests for specific modules
-node mongoose/mongoose.test.js
-node mongoose/middleware.test.js
-
-# Test email functionality
-node express/URL_Shortener_Project/test-email.js
-
-# Test database insertion
-node express/URL_Shortener_Project/test-insert.js
-```
-
 ## 📖 Learning Resources
 
 This repository covers:
@@ -345,10 +313,3 @@ This repository covers:
 3. **Database** - MongoDB with Mongoose, MySQL with Drizzle
 4. **Authentication** - OAuth, JWT, email verification
 5. **Real-World Application** - URL Shortener with full CRUD
-
-## 📝 Project Structure Notes
-
-- **node_modules/** - NOT included (see .gitignore)
-- **.env files** - NOT included (see .gitignore)
-- All environment-specific files are excluded from version control
-- Each subdirectory can have its own `package.json` and dependencies
